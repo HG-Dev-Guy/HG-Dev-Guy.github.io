@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HG Quant Research</title>
+    <style>
+        body { font-family: monospace; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f4f4f4; }
+        header { background: #333; color: #fff; padding: 20px; border-radius: 5px; }
+        h1 { margin: 0; }
+        .paper { background: #fff; padding: 20px; margin-top: 20px; border-radius: 5px; border: 1px solid #ddd; }
+        code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+        pre { background: #222; color: #0f0; padding: 15px; overflow-x: auto; border-radius: 5px; }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>HG Quant Research</h1>
+    <p>Algorithmic Trading | AI Systems | Market Microstructure</p>
+</header>
+
+<section class="paper">
+    <h2>Volatility Modeling in Crypto Futures</h2>
+    <p>Using the Heston model to predict volatility regimes on Bybit.</p>
+    
+    <h3>1. The Math</h3>
+    <p>We model the stochastic volatility using the standard Heston SDE:</p>
+    <p>
+      $$ dS_t = \mu S_t dt + \sqrt{v_t} S_t dW_t^S $$
+      $$ dv_t = \kappa (\theta - v_t) dt + \sigma \sqrt{v_t} dW_t^v $$
+    </p>
+
+    <h3>2. The Code (C++)</h3>
+    <p>Implementation of the discrete Euler-Maruyama scheme:</p>
+    <pre>
+// C++ Volatility Simulation
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+
+void simulate_heston() {
+    double S = 100.0; // Spot price
+    double v = 0.04;  // Variance
+    // ... simulation logic ...
+}</pre>
+</section>
+
+</body>
+</html>
